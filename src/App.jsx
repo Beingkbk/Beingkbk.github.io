@@ -21,6 +21,15 @@ export default function PortfolioApp() {
       tech: ["PyTorch", "MetaDrive", "Reinforcement Learning", "Python"],
       github: "https://github.com/Beingkbk/MetaDrive--PPO/tree/kartik",
       slides: "/presentations/ppo-autonomous-agent.pdf",
+      media: "/project-media/ppo-demo.gif",
+    },
+     {
+      title: "Deep Q-Learning - Parachute Environment",
+      desc: "Built a reinforcement learning setup for autonomous control in a parachute lander simulation using a discrete action space.",
+      tech: ["DQN", "RL", "Gym", "Python"],
+      github: "https://github.com/Beingkbk/padm_assignment",
+      slides: "/presentations/deep-q-learning.pdf",
+      media: "/project-media/parachute-lander.gif"
     },
     {
       title: "Modular Federated Learning for Manufacturing",
@@ -28,13 +37,7 @@ export default function PortfolioApp() {
       tech: ["PyTorch", "TensorFlow", "ModFL", "Manufacturing AI"],
       github: "https://github.com/AImotion-Bavaria/FEDIMA-Experiments",
     },
-    {
-      title: "Deep Q-Learning - Parachute Environment",
-      desc: "Built a reinforcement learning setup for autonomous control in a parachute lander simulation using a discrete action space.",
-      tech: ["DQN", "RL", "Gym", "Python"],
-      github: "https://github.com/Beingkbk/padm_assignment",
-      slides: "/presentations/deep-q-learning.pdf",
-    },
+   
     {
       title: "Survey: End-to-End vs Modular Architectures",
       desc: "Comparative study of end-to-end learning and modular approaches for autonomous driving systems, focusing on trade-offs and hybrid design directions.",
@@ -184,7 +187,7 @@ export default function PortfolioApp() {
             {[
               "Python",
               "PyTorch",
-              "TensorFlow",
+              "Deep Learning",
               "scikit-learn",
               "Reinforcement Learning",
               "LLMs",
@@ -195,7 +198,7 @@ export default function PortfolioApp() {
               "Industrial AI",
               "Git",
               "Linux",
-              "SQL",
+              "CAN/LIN",
             ].map((s) => (
               <motion.span
                 key={s}
@@ -208,41 +211,6 @@ export default function PortfolioApp() {
           </div>
         </section>
 
-        <section id="projects" className="py-10">
-          <h3 className="text-2xl font-semibold">Featured Projects</h3>
-          <div className="mt-6 grid md:grid-cols-2 gap-6">
-            {projects.map((p) => (
-              <motion.article
-                key={p.title}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45 }}
-                className="p-6 bg-slate-900/60 rounded-2xl border border-slate-800 shadow-lg"
-              >
-                <h4 className="font-semibold text-lg">{p.title}</h4>
-                <p className="mt-2 text-slate-300 text-sm leading-6">{p.desc}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {p.tech.map((t) => (
-                    <span key={t} className="text-xs px-2 py-1 bg-slate-800 rounded-md border border-slate-700">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <div className="mt-5 flex flex-wrap items-center gap-4">
-                  <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-slate-100 hover:underline">
-                    <Github size={14} /> Source
-                  </a>
-                  {p.slides && (
-                    <a href={p.slides} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-indigo-300 hover:underline">
-                      <FileText size={14} /> Presentation
-                    </a>
-                  )}
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </section>
 
         <section id="experience" className="py-10">
           <h3 className="text-2xl font-semibold">Experience</h3>
@@ -279,10 +247,12 @@ export default function PortfolioApp() {
               <div>
                 <p className="font-semibold">M.Eng - AI Engineering for Autonomous Systems</p>
                 <p className="text-sm text-slate-400">Technische Hochschule Ingolstadt • 03/2024 - Present</p>
+                <p className="text-sm text-slate-400 mt-1">• AI and automotive system • Principle of Autonomy and decision-making  • Systems Engineering and Architecting for Edge Computing</p>
               </div>
               <div>
                 <p className="font-semibold">B.Eng - Electrical Engineering</p>
                 <p className="text-sm text-slate-400">Savitribai Phule Pune University • 07/2018 - 05/2022</p>
+                <p className="text-sm text-slate-400 mt-1">• Advanced microcontrollers • Power system • Electrical machines</p>
               </div>
             </div>
           </div>
@@ -296,6 +266,55 @@ export default function PortfolioApp() {
             </ul>
           </div>
         </section>
+
+        <section id="projects" className="py-10">
+          <h3 className="text-2xl font-semibold">Featured Projects</h3>
+          <div className="mt-6 grid md:grid-cols-2 gap-6">
+            {projects.map((p) => (
+              <motion.article
+                key={p.title}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45 }}
+                className="p-6 bg-slate-900/60 rounded-2xl border border-slate-800 shadow-lg"
+              >
+                <h4 className="font-semibold text-lg">{p.title}</h4>
+                {p.media && (
+                  <div className="mt-4 overflow-hidden rounded-xl border border-slate-700 bg-black/20">
+                    <img
+                      src={p.media}
+                      alt={`${p.title} demo`}
+                      className="w-full h-56 object-cover"
+                    />
+                  </div>
+                )}
+                <p className="mt-2 text-slate-300 text-sm leading-6">{p.desc}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {p.tech.map((t) => (
+                    <span key={t} className="text-xs px-2 py-1 bg-slate-800 rounded-md border border-slate-700">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-5 flex flex-wrap items-center gap-4">
+                  <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-slate-100 hover:underline">
+                    <Github size={14} /> Source
+                  </a>
+                  {p.slides && (
+                    <a href={p.slides} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-indigo-300 hover:underline">
+                      <FileText size={14} /> Presentation
+                    </a>
+                  )}
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </section>
+
+        
+
+        
 
         <section id="contact" className="py-10">
           <h3 className="text-2xl font-semibold">Contact</h3>
