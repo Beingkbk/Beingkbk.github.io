@@ -45,6 +45,13 @@ export default function PortfolioApp() {
       github: "https://github.com/Beingkbk/e2e-vs-modular-survey",
       slides: "/presentations/survey-paper.pdf",
     },
+    {
+      title: "MNIST Digit Recognizer (CNN)",
+      desc: "Convolutional Neural Network trained on the MNIST dataset for handwritten digit recognition. Converted to TensorFlow.js to run entirely in the browser — no server needed. Draw a digit and get a live prediction with confidence scores.",
+      tech: ["Python", "Keras", "TensorFlow.js", "CNN", "MNIST"],
+      github: "https://github.com/Beingkbk/mnist-cnn",
+      demo: "https://beingkbk.github.io/mnist-cnn",
+    },
   ];
 
   const experience = [
@@ -304,6 +311,11 @@ export default function PortfolioApp() {
                   {p.slides && (
                     <a href={p.slides} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-indigo-300 hover:underline">
                       <FileText size={14} /> Presentation
+                    </a>
+                  )}
+                  {p.demo && (
+                    <a href={p.demo} target="_blank" rel="noopener noreferrer" className="text-sm inline-flex items-center gap-2 text-emerald-400 hover:underline">
+                      <ExternalLink size={14} /> Live Demo
                     </a>
                   )}
                 </div>
