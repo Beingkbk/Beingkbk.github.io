@@ -52,13 +52,30 @@ export default function PortfolioApp() {
       github: "https://github.com/Beingkbk/mnist-cnn",
       demo: "https://beingkbk.github.io/mnist-cnn",
     },
+    {
+      title: "Decision Clarity: AI Decision Tool",
+      desc: "An AI powered web app that helps you make clearer decisions by breaking down complex choices. Built with React and powered by the Anthropic Claude API via a serverless backend.",
+      tech: ["React", "Claude API", "Vercel", "Serverless"],
+      github: "https://github.com/Beingkbk/decision-clarity",
+      demo: "https://decision-clarity-mauve.vercel.app/",
+    },
   ];
 
   const experience = [
     {
+      role: "Master's Thesis Student - R&D (ThinKIsense)",
+      org: "NETZSCH Pumpen & Systeme GmbH",
+      time: "05/2025 - Present",
+      points: [
+        "Conducting research on AI-based condition monitoring and predictive maintenance for industrial pumps.",
+        "Developing and evaluating ML/DL models for anomaly detection and performance prediction using PyTorch and scikit-learn.",
+        "Implementing data pipelines for time-series sensor data and integrating models into edge computing environments.",
+      ],
+    },
+    {
       role: "Working Student - R&D (ThinKIsense)",
       org: "NETZSCH Pumpen & Systeme GmbH",
-      time: "10/2025 - Present",
+      time: "10/2025 - 04/2026",
       points: [
         "Built Python-based data pipelines for time- and frequency-domain signal analysis and feature engineering.",
         "Designed, trained, and evaluated ML/DL models using PyTorch and scikit-learn.",
@@ -68,7 +85,7 @@ export default function PortfolioApp() {
     {
       role: "Student Assistant - R&D (FEDIMA)",
       org: "Technische Hochschule Ingolstadt / AIMotion Bavaria",
-      time: "04/2025 - Present",
+      time: "04/2025 - 03/2026",
       points: [
         "Worked on modular neural networks for quality prediction in manufacturing.",
         "Researched ModFL/FedPer and domain adversarial architectures for adaptive ML systems.",
@@ -135,10 +152,10 @@ export default function PortfolioApp() {
           >
             <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">Portfolio</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              AI Engineering for Autonomous and Industrial Systems
+              AI Engineering of Autonomous and Industrial Systems
             </h2>
             <p className="mt-5 text-slate-300 max-w-2xl text-base md:text-lg leading-7">
-              Master’s student in AI Engineering for Autonomous Systems at Technische Hochschule Ingolstadt, with hands-on experience in reinforcement learning, industrial AI, modular learning systems, and ML model development for manufacturing and sensing applications.
+              Master’s student in AI Engineering of Autonomous Systems at Technische Hochschule Ingolstadt, with hands-on experience in reinforcement learning, industrial AI, modular learning systems, and ML model development for manufacturing and sensing applications.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
