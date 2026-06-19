@@ -350,7 +350,7 @@ export default function PortfolioApp() {
           <div className="mt-5 grid lg:grid-cols-2 gap-6">
             <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-800">
               <p className="text-slate-200 font-medium">kartik.b.kapse@gmail.com</p>
-              <p className="text-slate-400 mt-2">Munich, Germany • Open to AI / ML / Working Student / Internship opportunities</p>
+              <p className="text-slate-400 mt-2">Munich, Germany • Open to AI/ML opportunities</p>
               <div className="mt-5 flex gap-4 items-center text-slate-300">
                 <a href="https://github.com/Beingkbk" target="_blank" rel="noopener noreferrer"><Github /></a>
                 <a href="https://linkedin.com/in/kartik-kapse" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
