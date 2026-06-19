@@ -47,7 +47,7 @@ export default function PortfolioApp() {
     },
     {
       title: "MNIST Digit Recognizer (CNN)",
-      desc: "Convolutional Neural Network trained on the MNIST dataset for handwritten digit recognition. Converted to TensorFlow.js to run entirely in the browser — no server needed. Draw a digit and get a live prediction with confidence scores.",
+      desc: "Convolutional Neural Network trained on the MNIST dataset for handwritten digit recognition. Converted to TensorFlow.js to run entirely in the browser - no server needed. Draw a digit and get a live prediction with confidence scores.",
       tech: ["Python", "Keras", "TensorFlow.js", "CNN", "MNIST"],
       github: "https://github.com/Beingkbk/mnist-cnn",
       demo: "https://beingkbk.github.io/mnist-cnn",
