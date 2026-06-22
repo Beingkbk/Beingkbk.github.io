@@ -59,6 +59,13 @@ export default function PortfolioApp() {
       github: "https://github.com/Beingkbk/decision-clarity",
       demo: "https://decision-clarity-mauve.vercel.app/",
     },
+    {
+      title: "RAGMentor: AI Learning Assistant",
+      desc: "Developed RAGMentor, an AI learning assistant using RAG (LangChain + ChromaDB + Groq) that answers questions from uploaded PDFs with zero hallucination. Deployed publicly on Hugging Face Spaces.",
+      tech: ["React", "Claude API", "Vercel", "Serverless"],
+      github: "https://github.com/Beingkbk/RAGMentor",
+      demo: "https://huggingface.co/spaces/Beingkbk/RAGMentor",
+    },
   ];
 
   const experience = [
