@@ -62,7 +62,7 @@ export default function PortfolioApp() {
     {
       title: "RAGMentor: AI Learning Assistant",
       desc: "Developed RAGMentor, an AI learning assistant using RAG (LangChain + ChromaDB + Groq) that answers questions from uploaded PDFs with zero hallucination. Deployed publicly on Hugging Face Spaces.",
-      tech: ["React", "Claude API", "Vercel", "Serverless"],
+      tech: ["RAG", "Groq API", "ChromaDB", "LangChain", "Gradio"],
       github: "https://github.com/Beingkbk/RAGMentor",
       demo: "https://huggingface.co/spaces/Beingkbk/RAGMentor",
     },
