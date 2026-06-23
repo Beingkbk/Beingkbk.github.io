@@ -44,6 +44,7 @@ export default function PortfolioApp() {
       tech: ["Research", "Autonomous Driving", "System Design"],
       github: "https://github.com/Beingkbk/e2e-vs-modular-survey",
       slides: "/presentations/survey-paper.pdf",
+      demo: "https://beingkbk.github.io/e2e-vs-modular-survey",
     },
     {
       title: "MNIST Digit Recognizer (CNN)",
