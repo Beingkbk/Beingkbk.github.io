@@ -67,6 +67,13 @@ export default function PortfolioApp() {
       github: "https://github.com/Beingkbk/RAGMentor",
       demo: "https://huggingface.co/spaces/Beingkbk/RAGMentor",
     },
+    {
+      title: "Voice Message → PDF Service Report",
+      desc: "An n8n workflow that turns a technician's voice memo into a structured PDF service report, using local speech recognition and a local LLM — no customer data leaves the machine.",
+      tech: ["n8n", "Automation", "LLM", "Whisper", "Ollama", "Docker"],
+      github: "https://github.com/Beingkbk/service-report-workflow",
+      media: "/project-media/Workflow.png",
+    },
   ];
 
   const experience = [
