@@ -30,14 +30,7 @@ export default function PortfolioApp() {
       github: "https://github.com/Beingkbk/padm_assignment",
       slides: "/presentations/deep-q-learning.pdf",
       media: "/project-media/parachute-lander.gif"
-    },
-    {
-      title: "Modular Federated Learning for Manufacturing",
-      desc: "Worked on modular neural networks, ModFL/FedPer and domain-adaptive approaches for ML-based quality prediction in heterogeneous manufacturing systems.",
-      tech: ["PyTorch", "TensorFlow", "ModFL", "Manufacturing AI"],
-      github: "https://github.com/AImotion-Bavaria/FEDIMA-Experiments",
-    },
-   
+    }, 
     {
       title: "Survey: End-to-End vs Modular Architectures",
       desc: "Comparative study of end-to-end learning and modular approaches for autonomous driving systems, focusing on trade-offs and hybrid design directions.",
@@ -52,6 +45,7 @@ export default function PortfolioApp() {
       tech: ["Python", "Keras", "TensorFlow.js", "CNN", "MNIST"],
       github: "https://github.com/Beingkbk/mnist-cnn",
       demo: "https://beingkbk.github.io/mnist-cnn",
+      media: "/project-media/MNIST.gif",
     },
     {
       title: "Decision Clarity: AI Decision Tool",
@@ -59,6 +53,7 @@ export default function PortfolioApp() {
       tech: ["React", "Claude API", "Vercel", "Serverless"],
       github: "https://github.com/Beingkbk/decision-clarity",
       demo: "https://decision-clarity-mauve.vercel.app/",
+      media: "/project-media/decision_clarity.png",
     },
     {
       title: "RAGMentor: AI Learning Assistant",
@@ -66,6 +61,7 @@ export default function PortfolioApp() {
       tech: ["RAG", "Groq API", "ChromaDB", "LangChain", "Gradio"],
       github: "https://github.com/Beingkbk/RAGMentor",
       demo: "https://huggingface.co/spaces/Beingkbk/RAGMentor",
+      media: "/project-media/RAGMentor.gif",
     },
     {
       title: "Voice Message → PDF Service Report",
@@ -73,6 +69,12 @@ export default function PortfolioApp() {
       tech: ["n8n", "Automation", "LLM", "Whisper", "Ollama", "Docker"],
       github: "https://github.com/Beingkbk/service-report-workflow",
       media: "/project-media/Workflow.png",
+    },
+    {
+      title: "Modular Federated Learning for Manufacturing",
+      desc: "Worked on modular neural networks, ModFL/FedPer and domain-adaptive approaches for ML-based quality prediction in heterogeneous manufacturing systems.",
+      tech: ["PyTorch", "TensorFlow", "ModFL", "Manufacturing AI"],
+      github: "https://github.com/AImotion-Bavaria/FEDIMA-Experiments",
     },
   ];
 
