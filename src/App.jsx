@@ -32,6 +32,12 @@ export default function PortfolioApp() {
       media: "/project-media/parachute-lander.gif"
     }, 
     {
+      title: "Modular Federated Learning for Manufacturing",
+      desc: "Worked on modular neural networks, ModFL/FedPer and domain-adaptive approaches for ML-based quality prediction in heterogeneous manufacturing systems.",
+      tech: ["PyTorch", "TensorFlow", "ModFL", "Manufacturing AI"],
+      github: "https://github.com/AImotion-Bavaria/FEDIMA-Experiments",
+    },
+    {
       title: "Survey: End-to-End vs Modular Architectures",
       desc: "Comparative study of end-to-end learning and modular approaches for autonomous driving systems, focusing on trade-offs and hybrid design directions.",
       tech: ["Research", "Autonomous Driving", "System Design"],
@@ -69,12 +75,6 @@ export default function PortfolioApp() {
       tech: ["n8n", "Automation", "LLM", "Whisper", "Ollama", "Docker"],
       github: "https://github.com/Beingkbk/service-report-workflow",
       media: "/project-media/Workflow.png",
-    },
-    {
-      title: "Modular Federated Learning for Manufacturing",
-      desc: "Worked on modular neural networks, ModFL/FedPer and domain-adaptive approaches for ML-based quality prediction in heterogeneous manufacturing systems.",
-      tech: ["PyTorch", "TensorFlow", "ModFL", "Manufacturing AI"],
-      github: "https://github.com/AImotion-Bavaria/FEDIMA-Experiments",
     },
   ];
 
